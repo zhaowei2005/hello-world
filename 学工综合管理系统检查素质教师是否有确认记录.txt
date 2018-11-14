@@ -1,0 +1,5 @@
+--查询用户是否有审批记录
+select t.*, t.rowid from sw_sef_ckrsltbacklog t where t.teacherno ='zhouyongfu' and t.createtime >to_date('20170303','yyyyMMdd') order by t.classno;
+
+--修改辅导员确认数据
+update sw_sef_ckrsltbacklog t set t.teacherno='zhangsirou' ,t.teachername='张思柔' where t.teacherno ='zhouyongfu' and t.createtime >to_date('20170303','yyyyMMdd') order by t.classno;
